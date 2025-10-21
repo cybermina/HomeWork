@@ -1,53 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-color: rgb(0, 0, 0); /* чёрный фон */
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    h2 {
+      color: rgb(0, 255, 102);
+      text-shadow: 0 0 15px rgb(0, 255, 102);
+    }
+
+    form {
+      background: rgba(0, 255, 102, 0.05);
+      border: 1px solid rgb(0, 255, 102);
+      border-radius: 10px;
+      padding: 30px;
+      width: 320px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px rgb(0, 255, 102);
+    }
+
+    input, select {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 85%;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(20, 20, 20);
+      color: rgb(0, 255, 102);
+      font-size: 15px;
+      box-shadow: inset 0 0 8px rgb(0, 255, 102);
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, select:focus {
+      box-shadow: 0 0 15px rgb(0, 255, 102);
+      transform: scale(1.03);
+    }
+
+    button {
+      background-color: rgb(0, 255, 102); /* неоново-зелёный */
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: rgb(0, 204, 85);
+      box-shadow: 0 0 20px rgb(0, 255, 102);
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <h1 style="color: white;
-  background-color: black;">
-    Single Page Website
-</h1>
-<h2>ABOUT</h2>
-<H4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.
+  <h2>Registration Form</h2>
+  <form>
+    <input type="text" placeholder="First Name" required>
+    <input type="text" placeholder="Last Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <input type="number" placeholder="Age" min="10" max="100" required>
 
-Consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.
+    <select required>
+      <option value="">Select Region</option>
+      <option value="andijan">Andijan</option>
+      <option value="bukhara">Bukhara</option>
+      <option value="fergana">Fergana</option>
+      <option value="jizzakh">Jizzakh</option>
+      <option value="kashkadarya">Kashkadarya</option>
+      <option value="khorezm">Khorezm</option>
+      <option value="namangan">Namangan</option>
+      <option value="navoiy">Navoiy</option>
+      <option value="samarkand">Samarkand</option>
+      <option value="sirdarya">Sirdarya</option>
+      <option value="surkhandarya">Surkhandarya</option>
+      <option value="tashkent">Tashkent Region</option>
+      <option value="tashkent_city">Tashkent City</option>
+      <option value="karakalpakstan">Republic of Karakalpakstan</option>
+    </select>
 
-Consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.
-
-Consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.
-
-Consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.
-
-</H4>
-<hr>
-<h1>SOME CONTENT</h1>
-<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.
-
-Consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.
-
-Consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.
-
-Consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.
-
-Consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Sit amet, consectetur adipiscing elit. Praesent ultrices, mauris id pharetra posuere, massa mi consequat odio, sed vehicula dui dolor ut augue. Praesent nulla purus, elementum non orci vitae, placerat iaculis magna. Duis consectetur convallis massa, id fermentum felis semper vel. In porttitor posuere magna a pharetra.</h4>
-    <hr>
-   <H2>CONTACT</H2>
-   <form>
-    <input type="text"placeholder="Name">
-    <br>
-    <br>
-    <input type="text"placeholder="Email">
-    <br><br>
-    <input type="text"placeholder="Tel">
-    <br><br>
-    <input type="text"placeholder="Message">
-<br><br>
-<button>send</button>
-   </form> 
-  
-
+    <button type="submit">Register</button>
+  </form>
 </body>
 </html>
